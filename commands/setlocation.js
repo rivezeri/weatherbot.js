@@ -9,7 +9,11 @@ module.exports = {
     ,
     async execute(interaction) {
 
-        await interaction.reply(interaction.user.tag);
+        if (!interaction.user.content == "") return;
+
+        
+
+        await interaction.reply();
         // Bot output. /ping comes in, 'Pong?' goes out.
     }
 
